@@ -13,7 +13,7 @@ export default function App() {
     return (
       <div>
         <Navbar />
-        <Hero />
+        <Hero/>
         <AboutContainer />
         <Contact />
         <Footer />

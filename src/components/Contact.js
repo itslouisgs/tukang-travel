@@ -4,13 +4,11 @@ import Button from "./Button"
 
 export default function Contact(){
     return (
-        <div className="bg-gray-50">
-            <div className="max-w-screen-2xl px-24 py-16">
-                <div className="contact-wrapper rounded-2xl p-16 flex flex-col gap-12 shadow-2xl">
-                    <h2 className="text-3xl font-medium text-white w-3/5 text-shadow">Not sure where to start? Let's explore together with us!</h2>
-                    <div className="flex gap-6">
-                        <Button content="Explore with us"/>
-                    </div>
+        <div id="Contact" className="bg-gray-50">
+            <div className="wrapper pt-12 sl:pt-16 pb-24 px-1 xs:px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24">
+                <div className="contact-wrapper rounded-2xl p-6 xs:p-8 md:p-12 xl:p-16 flex flex-col gap-8 md:gap-12 shadow-2xl">
+                    <h2 className=" text-white w-full max-w-lg text-shadow h2">Not sure where to start? Then, let's explore together with us!</h2>
+                    <Button content="Explore with us"/>
                 </div>
             </div>
         </div>
