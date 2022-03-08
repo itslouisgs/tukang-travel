@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/main-page/static/css/main.0542866b.css",
-    "main.js": "/main-page/static/js/main.f72a4fe8.js",
+    "main.css": "/main-page/static/css/main.1c563380.css",
+    "main.js": "/main-page/static/js/main.d960d0bd.js",
     "static/media/background.jpg": "/main-page/static/media/background.74b0007b6d5f8d8e0433.jpg",
     "static/media/contact-banner.jpg": "/main-page/static/media/contact-banner.e801c574cd7f48879a79.jpg",
     "static/media/pic.jpg": "/main-page/static/media/pic.1433055076ae74ba337b.jpg",
     "static/media/logo.png": "/main-page/static/media/logo.c705c51bf40f598279d8.png",
+    "static/media/logo-light.png": "/main-page/static/media/logo-light.054bb0a223018ba1535c.png",
     "static/media/google-play-badge.png": "/main-page/static/media/google-play-badge.7101c991750958b59868.png",
     "index.html": "/main-page/index.html",
-    "main.0542866b.css.map": "/main-page/static/css/main.0542866b.css.map",
-    "main.f72a4fe8.js.map": "/main-page/static/js/main.f72a4fe8.js.map"
+    "main.1c563380.css.map": "/main-page/static/css/main.1c563380.css.map",
+    "main.d960d0bd.js.map": "/main-page/static/js/main.d960d0bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.0542866b.css",
-    "static/js/main.f72a4fe8.js"
+    "static/css/main.1c563380.css",
+    "static/js/main.d960d0bd.js"
   ]
 }
