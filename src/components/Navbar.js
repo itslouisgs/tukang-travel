@@ -1,4 +1,5 @@
 import React from "react"
+import { Link, NavLink } from "react-router-dom";
 import "../style.css"
 import logo from "../assets/logo.png"
 
@@ -19,13 +20,15 @@ export default function Navbar(){
         <nav className="bg-white shadow-lg fixed w-full z-50">
             <div className="wrapper flex justify-between py-3 items-center">
                 <div className="w-fit">
-                    <img src={logo} alt="Logo" className="h-10 md:h-12"/>
+                    <Link to="/">
+                        <img src={logo} alt="Logo" className="h-10 md:h-12"/>
+                    </Link>
                 </div>
                 <ul className="hidden md:block list-none">
-                    <li className="inline-block"><a href="">Home</a></li>
-                    <li className="inline-block ml-8"><a href="#About">About Us</a></li>
-                    <li className="inline-block ml-8"><a href="">Blogs</a></li>
-                    <li className="inline-block ml-8"><a href="#Contact">Contacts</a></li>    
+                    <li className="inline-block"><NavLink exact={true} to="/" activeClassName="is-active">Home</NavLink></li>
+                    <li className="inline-block ml-8"><NavLink to="/about" activeClassName="is-active">About Us</NavLink></li>
+                    <li className="inline-block ml-8"><a href="/#Join">Join Us</a></li>
+                    <li className="inline-block ml-8"><NavLink to="/contact" activeClassName="is-active">Contacts</NavLink></li>    
                 </ul>  
                 <div id="hamburger" className="md:hidden block w-6 h-4 elative rotate-0  transform -top-[2.5px] rounded-full hover:opacity-80 cursor-pointer" onClick={toggleNavbar}>
                     <span className="top-0"></span>

@@ -1,15 +1,31 @@
-import React from "react"
+import React, { useState } from "react"
 import "../style.css"
-import Button from "./Button"
 
 export default function Contact(){
+
     return (
-        <div id="Contact" className="bg-gray-50">
-            <div className="wrapper pt-12 sl:pt-16 pb-24 px-1 xs:px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24">
-                <div className="contact-wrapper rounded-2xl p-6 xs:p-8 md:p-12 xl:p-16 flex flex-col gap-8 md:gap-12 shadow-2xl">
-                    <h2 className=" text-white w-full max-w-lg text-shadow h2">Not sure where to start? Then, let's explore together with us!</h2>
-                    <Button content="Explore with us"/>
+        <div className="bg-gray-50 pt-32 pb-16">
+            <div className="wrapper max-w-4xl">
+                <div className="pb-4">
+                    <h2 className="text-center sl:text-left pb-4">Kontak Kami</h2>
+                    <h3 className="">Sampaikan pesan Anda supaya kami dapat menunjang permintaan Anda!</h3>
                 </div>
+                <hr className="py-4"/>
+                <form className="flex flex-col gap-4" onSubmit="">
+                    <div className="flex flex-row items-center">
+                        <label className="w-1/4 required" htmlFor="name">Nama</label>
+                        <input className="w-3/4 border-[1px] p-2 rounded-lg" type="text" id="name" placeholder="Masukkan nama Anda" required />
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <label className="w-1/4 required" htmlFor="email">Alamat email</label>
+                        <input className="w-3/4 border-[1px] p-2 rounded-lg" type="email" id="email" placeholder="Masukkan alamat email Anda" required />
+                    </div>
+                    <div className="flex flex-row items-center">
+                        <label className="w-1/4 required" htmlFor="message">Pesan</label>
+                        <textarea id="message" className="w-3/4 border-[1px] p-2 rounded-lg" type="email" placeholder="Masukkan pesan Anda" rows="5" required />
+                    </div>
+                    <button type="submit" className="btn btn-primary shadow-none mt-4">Kirim</button>
+                </form>
             </div>
         </div>
     )

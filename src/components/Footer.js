@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"
 import appStoreBadge from "../assets/app-store-badge.png"
 import googlePlayBadge from "../assets/google-play-badge.png"
@@ -13,20 +14,19 @@ export default function Footer(){
                         <img className="h-16 w-fit" src={logo} alt="TukangTravel"/>
                         <div className="flex sm:gap-12 sl:gap-24 leading-normal">
                             <ul className="w-1/2 sm:w-fit">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Join Us</a></li>
-                                <li><a href="">Blogs</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About Us</Link></li>
+                                <li><Link to="/join-us">Join Us</Link></li>
                             </ul>
                             <ul className="w-1/2 sm:w-fit">
-                                <li><a href="">Privacy Policy</a></li>
-                                <li><a href="">Terms of Service</a></li>
-                                <li><a href="">Contact Us</a></li>
+                                <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                                <li><Link to="/terms-of-service">Terms of Service</Link></li>
+                                <li><Link to="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 w-full sm:w-fit">
-                        <h6 className="font-semibold">Download TukangTravel Now</h6>
+                        <h6 className="font-semibold">Download TukangTravel Sekarang</h6>
                         <div className="flex gap-4 sm:gap-6 flex-wrap">
                             <a className="hover:opacity-80" href=""><img className="h-8 min-w-fit xs:h-10" src={googlePlayBadge} alt="Get it on Google Play"/></a>
                             <a className="hover:opacity-80" href=""><img className="h-8 min-w-fit xs:h-10" src={appStoreBadge} alt="Download on the App Store"/></a>
@@ -37,11 +37,10 @@ export default function Footer(){
                 {/* Bottom section */}
                 <div className="flex items-center justify-between pt-4 pb-6 flex-col xs:flex-row gap-1 xs:gap-0">
                     <div className="flex gap-1">
-                        <a href=""><i class="text-lg md:text-xl text-gray-800 ri-facebook-box-fill"></i></a>
-                        <a href=""><i class="text-lg md:text-xl text-gray-800 ri-twitter-fill"></i></a>
-                        <a href=""><i class="text-lg md:text-xl text-gray-800 ri-youtube-fill"></i></a>
-                        <a href=""><i class="text-lg md:text-xl text-gray-800 ri-instagram-line"></i></a>
-                        <a href=""><i class="text-lg md:text-xl text-gray-800 ri-linkedin-box-fill"></i></a>
+                        <a className="flex gap-1 items-center hover:text-orange-600" href="https://instagram.com/tukangtravel.id">
+                            <i class="text-xl text-gray- ri-instagram-line"></i> 
+                            <p>tukangtravel.id</p>
+                        </a>
                     </div>
                     <p>© 2022 TukangTravel</p>
                 </div>

@@ -10,6 +10,8 @@
 
 # production
 /build
+/src/components/ContactForm.js
+/src/components/server.js
 
 # misc
 .DS_Store

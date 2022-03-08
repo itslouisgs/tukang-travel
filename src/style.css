@@ -27,6 +27,10 @@
   }
 
   /* Buttons */
+  .btn {
+    @apply px-[14px] md:px-4 py-2 rounded shadow-lg hover:opacity-90 cursor-pointer w-fit min-w-fit;
+  }
+
   .btn-primary {
     @apply bg-orange-600 text-white;
   }
@@ -53,6 +57,7 @@
     background-size: cover;
   }
 
+  /* Hamburger Navbar */
   #hamburger > span {
     @apply h-[2.25px] bg-gray-600 w-full rounded opacity-100 absolute transform rotate-0 duration-500 ease-in-out origin-[left_center];
   }
@@ -68,6 +73,21 @@
   #hamburger.expand > span:nth-child(3) {
     @apply transform -rotate-[42.5deg];
   }
+
+  /* Utilities */
+  a:hover:not(.button):not(.is-active) {
+    @apply text-orange-600;
+  }
+
+  .is-active {
+    @apply font-semibold;
+  }
+
+  /* Form label */
+  form label.required::after {
+    @apply text-red-500;
+    content: "*";
+  }
 }
 
 /* Initialize values */
@@ -80,12 +100,9 @@ html {
   scroll-padding-top: 48px;
 }
 
+h2 > div,
 span {
   font-size: inherit;
-}
-
-a:hover {
-  opacity: 0.8;
 }
 
 /* Text shadow utility */

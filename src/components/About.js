@@ -1,18 +1,16 @@
 import React from "react"
 import "../style.css"
-import pic from "../assets/pic.jpg"
 
-export default function About(props){
-    const flexDirection = props.colReverse === "true" ? "sl:flex-row-reverse" : "sl:flex-row"
-
-    return(
-        <div className="wrapper">
-            <div className={`flex justify-between gap-12 lg:gap-18 xl:gap-24 items-center flex-col-reverse ${flexDirection}`}>
-                <div className="max-w-xl sl:max-w-none flex flex-col gap-8 sl:w-3/5">
-                    <div className="text-center sl:text-left">{props.title}</div>
-                    <p>{props.desc}</p>
-                </div>
-                <img className="rounded-2xl w-full max-w-md sl:w-2/5" src={pic} alt=""></img>
+export default function About(){
+    return (
+        <div className="bg-gray-50 pt-18">
+            <div className="wrapper py-12 xl:py-16 flex flex-col gap-4">
+                <h2 className="text-center sl:text-left pb-4">Tentang Kami</h2>
+                <p>
+                    TukangTravel merupakan sebuah aplikasi yang menyediakan akses informasi bagi masyarakat untuk menemukan tempat-tempat unik dari destinasi wisata yang akan mereka kunjungi nantinya. Sebagai aplikasi yang menunjang lifestyle travelling di Indonesia, kami menyediakan informasi seputar hidden gem yang terletak di destinasi yang Anda ingin kunjungi. Kami juga menawarkan layanan rekomendasi destinasi wisata yang indah tetapi jarang dikenal masyarakat. TukangTravel juga menawarkan tour guide untuk melengkapi para traveler yang membutuhkan bantuan pada saat berada di destinasi tujuannya.
+                </p>
+                
+                <p>Travelling, TukangTravel solusinya.</p>
             </div>
         </div>
     )

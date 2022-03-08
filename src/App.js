@@ -1,22 +1,31 @@
 import React from "react"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar"
-import Hero from './components/Hero'
-import AboutContainer from './components/AboutContainer'
-import Blog from './components/Blog'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Button from "./components/Button"
-import "./style.css"
-import "./assets/logo.png"
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
+import NotFound from './components/NotFound'
 
 export default function App() {
     return (
-      <div>
+      <Router>
         <Navbar />
-        <Hero/>
-        <AboutContainer />
-        <Contact />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/*">
+            <NotFound />
+          </Route>
+        </Switch>
         <Footer />
-      </div>
+      </Router>
     )
   }
