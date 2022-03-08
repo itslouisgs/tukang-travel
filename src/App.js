@@ -12,16 +12,16 @@ export default function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/main-page/">
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path="/main-page/about">
             <About />
           </Route>
-          <Route path="/contact">
+          <Route path="/main-page/contact">
             <Contact />
           </Route>
-          <Route path="/*">
+          <Route path="/main-page/*">
             <NotFound />
           </Route>
         </Switch>

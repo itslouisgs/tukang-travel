@@ -75,7 +75,7 @@
   }
 
   /* Utilities */
-  a:hover:not(.button):not(.is-active) {
+  a:not(.btn):not(.is-active):hover {
     @apply text-orange-600;
   }
 
