@@ -9,19 +9,19 @@ import NotFound from './components/NotFound'
 
 export default function App() {
     return (
-      <Router>
+      <Router >
         <Navbar />
         <Switch>
-          <Route exact path="/main-page/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/main-page/about">
+          <Route path="/about-us">
             <About />
           </Route>
-          <Route path="/main-page/contact">
+          <Route path="/contacts">
             <Contact />
           </Route>
-          <Route path="/main-page/*">
+          <Route path="/*">
             <NotFound />
           </Route>
         </Switch>

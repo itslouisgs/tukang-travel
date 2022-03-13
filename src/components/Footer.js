@@ -14,14 +14,14 @@ export default function Footer(){
                         <img className="h-16 w-fit" src={logo} alt="TukangTravel"/>
                         <div className="flex sm:gap-12 sl:gap-24 leading-normal">
                             <ul className="w-1/2 sm:w-fit">
-                                <li><Link to="/main-page/">Home</Link></li>
-                                <li><Link to="/main-page/about">About Us</Link></li>
-                                <li><Link to="/main-page/#Join">Join Us</Link></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about-us">About Us</Link></li>
+                                <li><Link to="/#Join">Join Us</Link></li>
                             </ul>
                             <ul className="w-1/2 sm:w-fit">
-                                <li><Link to="/main-page/privacy-policy">Privacy Policy</Link></li>
-                                <li><Link to="/main-page/terms-of-service">Terms of Service</Link></li>
-                                <li><Link to="/main-page/contact">Contact Us</Link></li>
+                                <li><Link to="main-page/privacy-policy">Privacy Policy</Link></li>
+                                <li><Link to="/terms-of-service">Terms of Service</Link></li>
+                                <li><Link to="/contacts">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>
