@@ -17,18 +17,18 @@ export default function Navbar(){
     }
 
     return(
-        <nav className="bg-white shadow-lg fixed w-full z-50">
+        <nav className="bg-white shadow-md fixed w-full z-50">
             <div className="wrapper flex justify-between py-3 items-center">
                 <div className="w-fit">
-                    <Link to="/main-page/">
+                    <Link to="/">
                         <img src={logo} alt="Logo" className="h-10 md:h-12"/>
                     </Link>
                 </div>
                 <ul className="hidden md:block list-none">
-                    <li className="inline-block"><NavLink exact={true} to="/main-page/" activeClassName="is-active">Home</NavLink></li>
-                    <li className="inline-block ml-8"><NavLink to="/main-page/about" activeClassName="is-active">About Us</NavLink></li>
-                    <li className="inline-block ml-8"><a href="/main-page/#Join">Join Us</a></li>
-                    <li className="inline-block ml-8"><NavLink to="/main-page/contact" activeClassName="is-active">Contacts</NavLink></li>    
+                    <li className="inline-block"><NavLink exact={true} to="/" activeClassName="is-active">Beranda</NavLink></li>
+                    <li className="inline-block ml-8"><NavLink to="/about" activeClassName="is-active">Tentang Kami</NavLink></li>
+                    <li className="inline-block ml-8"><a href="/#Join">Gabung</a></li>
+                    <li className="inline-block ml-8"><NavLink to="/contact" activeClassName="is-active">Kontak</NavLink></li>    
                 </ul>  
                 <div id="hamburger" className="md:hidden block w-6 h-4 elative rotate-0  transform -top-[2.5px] rounded-full hover:opacity-80 cursor-pointer" onClick={toggleNavbar}>
                     <span className="top-0"></span>

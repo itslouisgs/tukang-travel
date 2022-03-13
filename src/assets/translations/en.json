@@ -1,0 +1,25 @@
+{
+    "langName" : "English",
+    "dir" : "ltr",
+    "heading": "Together we explore the unexplored",   
+    "button": {
+        "learnMore": "Learn more",
+        "exploreWithUs" : "Explore with Us"
+    },
+    "page": {
+        "home": "Home",
+        "aboutUs" : "About Us",
+        "joinUs" : "Join Us",
+        "contacts" : "Contacts",
+        "privacyPolicy" : "Privacy policy",
+        "termsOfService" : "Terms of Service",
+        "pageNotFound": "Page Not Found"
+    },
+    "homePage": {
+        "heading" : ["TukangTravel, your travel initerary assistant", "No more fear of unfamiliar destinations"],
+        "body" : ["TukangTravel hadir sebagai asisten virtual rencana perjalanan untuk Anda yang gemar travelling. Sebagai aplikasi yang menunjang lifestyle travelling di Indonesia, kami menyediakan informasi seputar hidden gem yang terletak di destinasi yang Anda ingin kunjungi. Kami juga menawarkan layanan rekomendasi destinasi wisata yang indah tetapi jarang dikenal masyarakat.",
+        "Rasa cemas akan destinasi wisata yang akan dikunjungi pasti merupakan momok bagi setiap traveler. Untuk itu, kami memberikan layanan untuk menentukan destinasi wisata yang tepat bagi Anda dan mengakomodasi setiap kebutuhan travelling Anda supaya liburan Anda nyaman dan lancar tanpa rasa cemas."],
+        "joinUsSection" : "Not sure where to start? Then, your best option is to explore with us",
+        "downloadMessage" : "Download TukangTravel Now"
+    }
+}

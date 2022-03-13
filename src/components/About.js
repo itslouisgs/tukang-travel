@@ -1,9 +1,13 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import "../style.css"
 
 export default function About(){
     return (
         <div className="bg-gray-50 pt-18">
+            <Helmet>
+                <title>About | TukangTravel</title>
+            </Helmet>
             <div className="wrapper py-12 xl:py-16 flex flex-col gap-4">
                 <h2 className="text-center sl:text-left pb-4">Tentang Kami</h2>
                 <p>
