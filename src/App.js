@@ -9,7 +9,7 @@ import NotFound from './components/NotFound'
 
 export default function App() {
     return (
-      <Router>
+      <Router >
         <Navbar />
         <Switch>
           <Route exact path="/">
