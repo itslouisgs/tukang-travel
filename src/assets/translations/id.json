@@ -1,0 +1,25 @@
+{
+    "langName" : "Indonesian",
+    "dir" : "ltr",
+    "heading": "Jelajahi destinasi yang tersembunyi",   
+    "button": {
+        "learnMore": "Selengkapnya",
+        "exploreWithUs" : "Gabung"
+    },
+    "page": {
+        "home": "Beranda",
+        "aboutUs" : "Tentang Kami",
+        "joinUs" : "Gabung",
+        "contacts" : "Kontak",
+        "privacyPolicy" : "Kebijakan Privasi",
+        "termsOfService" : "Syarat dan Ketentuan",
+        "pageNotFound": "Halaman Tak Ditemukan"
+    },
+    "homePage": {
+        "heading" : ["TukangTravel, asisten rencana perjalanan Anda", "Tak perlu lagi cemas akan destinasi yang akan dikunjungi"],
+        "body" : ["TukangTravel hadir sebagai asisten virtual rencana perjalanan untuk Anda yang gemar travelling. Sebagai aplikasi yang menunjang lifestyle travelling di Indonesia, kami menyediakan informasi seputar hidden gem yang terletak di destinasi yang Anda ingin kunjungi. Kami juga menawarkan layanan rekomendasi destinasi wisata yang indah tetapi jarang dikenal masyarakat.",
+        "Rasa cemas akan destinasi wisata yang akan dikunjungi pasti merupakan momok bagi setiap traveler. Untuk itu, kami memberikan layanan untuk menentukan destinasi wisata yang tepat bagi Anda dan mengakomodasi setiap kebutuhan travelling Anda supaya liburan Anda nyaman dan lancar tanpa rasa cemas."],
+        "joinUsSection" : "Bingung mulai travelling dari mana? Ayo, gabung dengan kami sekarang juga!",
+        "downloadMessage" : "Download TukangTravel Sekarang"
+    }
+}

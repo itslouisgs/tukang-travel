@@ -15,10 +15,10 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/about-us">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/contacts">
+          <Route path="/contact">
             <Contact />
           </Route>
           <Route path="/*">

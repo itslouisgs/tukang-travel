@@ -18,6 +18,12 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
     },
+    dropShadow: {
+      'lg': [
+        '0 10px 8px rgb(0 0 0 / 0.04)',
+        '0 4px 3px rgb(0 0 0 / 0.25)'
+      ]
+    }
   },
   plugins: [],
 }

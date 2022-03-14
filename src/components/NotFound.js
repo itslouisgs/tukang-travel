@@ -1,10 +1,14 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import "../style.css"
 import Button  from '../components/Button'
 
 export default function NotFound(){
     return (
         <div className="bg-gray-50">
+            <Helmet>
+                <title>Page Not Found | TukangTravel</title>
+            </Helmet>
             <div className="wrapper w-4/5 h-[80vh] text-center flex flex-col justify-center gap-4">
                 <h1 className="pt-18 text-center text-9xl text-orange-600">404</h1>
                 <h2 className="pb-4">Oops, halaman tak ditemukan</h2>

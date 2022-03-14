@@ -1,18 +1,26 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import "../style.css"
 import Button from '../components/Button'
 import ParagraphLayout  from '../components/ParagraphLayout'
 
 export default function Home(){
+    const lang  = document.documentElement.lang
+    const translations = require(`../assets/translations/${lang}.json`)
+    console.log(translations)
+
     return(
         <div>
+            <Helmet>
+                <title>TukangTravel</title>
+            </Helmet>
             <div className="hero h-screen">
                 <div className="wrapper flex justify-center h-full pt-16 md:pt-18">
                     <div className="my-auto flex flex-col gap-8">
-                        <h1 className=" text-white text-shadow text-center">Jelajahi destinasi yang tersembunyi</h1>
+                        <h1 className=" text-white text-shadow text-center">{translations.heading}</h1>
                         <div className="flex justify-center mx-auto gap-3 md:gap-6 flex-wrap">
-                            <Button href="#About" className="btn-secondary" content="Selengkapnya" />
-                            <Button href="#Join" className="btn-primary" content="Gabung" />
+                            <Button href="#About" className="btn-secondary" content={translations.button.learnMore} />
+                            <Button href="#Join" className="btn-primary" content={translations.button.exploreWithUs} />
                         </div>
                     </div>
                 </div>
@@ -35,9 +43,12 @@ export default function Home(){
             </div>
             <div id="Join" className="bg-gray-50">
                 <div className="wrapper pt-12 sl:pt-16 pb-24 px-1 xs:px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24">
-                    <div className="contact-wrapper rounded-2xl p-6 xs:p-8 md:p-12 xl:p-16 flex flex-col gap-8 md:gap-12 shadow-2xl">
+                    <div className="contact-wrapper rounded-2xl p-6 xs:p-8 md:p-12 xl:p-16 flex flex-col gap-8 md:gap-12 drop-shadow-lg">
                         <h2 className=" text-white w-full max-w-2xl text-shadow h2">Bingung mulai travelling dari mana? Ayo, gabung dengan kami sekarang juga!</h2>
-                        <Button href="" content="Gabung"/>
+                        <div className="flex gap-4">
+                            <Button href="" content="Gabung"/>
+                            <Button href="/contact" className="btn-secondary" content="Kontak Kami"/>
+                        </div>
                     </div>
                 </div>
             </div>

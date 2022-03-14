@@ -28,7 +28,7 @@
 
   /* Buttons */
   .btn {
-    @apply px-[14px] md:px-4 py-2 rounded shadow-lg hover:opacity-90 cursor-pointer w-fit min-w-fit;
+    @apply px-[14px] md:px-4 py-2 rounded drop-shadow-lg hover:opacity-90 cursor-pointer w-fit min-w-fit;
   }
 
   .btn-primary {
@@ -88,6 +88,24 @@
     @apply text-red-500;
     content: "*";
   }
+
+  /* Form utility */
+  form {
+    @apply flex flex-col gap-6 sm:gap-4;
+  }
+
+  .form-field {
+    @apply flex flex-col sm:flex-row items-center;
+  }
+
+  label {
+    @apply w-full sm:w-1/4;
+  }
+
+  input,
+  textarea {
+    @apply w-full sm:w-3/4 border-[1px] border-gray-300 placeholder:text-slate-500 p-2 rounded-lg;
+  }
 }
 
 /* Initialize values */
@@ -105,7 +123,7 @@ span {
   font-size: inherit;
 }
 
-/* Text shadow utility */
+/* Text shadow */
 .text-shadow {
   text-shadow: 0px 0px 8px rgb(0 0 0 / 75%);
 }
