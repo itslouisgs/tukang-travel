@@ -11,7 +11,7 @@ export default function Contact() {
         e.preventDefault(); // Prevents default refresh by the browser
         emailjs.sendForm(emailkey.SERVICE_ID, emailkey.TEMPLATE_ID, form.current, emailkey.USER_ID)
             .then((result) => {
-                alert("Pesan Anda sudah berhasil terkirim!", result.text);
+                alert("Pesan Anda sudah berhasil terkirim!");
             },
                 (error) => {
                     alert("Terjadi kesalahan, silakan coba lagi!");
@@ -33,15 +33,15 @@ export default function Contact() {
                 <form ref={form} onSubmit={handleSubmit} method="POST">
                     <div className="form-field">
                         <label className="required" htmlFor="name">Nama</label>
-                        <input type="text" id="name" placeholder="Masukkan nama Anda" required />
+                        <input type="text" name="name" id="name" placeholder="Masukkan nama Anda" required />
                     </div>
                     <div className="form-field">
                         <label className=" required" htmlFor="email">Alamat email</label>
-                        <input type="email" id="email" placeholder="Masukkan alamat email Anda" required />
+                        <input type="email" name ="email" id="email" placeholder="Masukkan alamat email Anda" required />
                     </div>
                     <div className="form-field">
                         <label className=" required" htmlFor="message">Pesan</label>
-                        <textarea id="message" type="email" placeholder="Masukkan pesan Anda" rows="5" required />
+                        <textarea name="message" id="message" type="textarea" placeholder="Masukkan pesan Anda" rows="5" required />
                     </div>
                     <button type="submit" className="btn btn-primary mt-4">Kirim</button>
                 </form>
