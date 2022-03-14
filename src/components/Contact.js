@@ -7,14 +7,21 @@ import "../style.css"
 
 export default function Contact() {
     const form = useRef();
+
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default refresh by the browser
+        const submitBtn = Array.from(form.current.childNodes).find(element => element.id === "submitBtn")
+        
+        submitBtn.innerText = "Mengirim..."
+        
         emailjs.sendForm(emailkey.SERVICE_ID, emailkey.TEMPLATE_ID, form.current, emailkey.USER_ID)
             .then((result) => {
                 alert("Pesan Anda sudah berhasil terkirim!");
+                submitBtn.innerText = "Kirim"
             },
                 (error) => {
                     alert("Terjadi kesalahan, silakan coba lagi!");
+                    submitBtn.innerText = "Kirim"
                 });
     };
 
@@ -43,7 +50,7 @@ export default function Contact() {
                         <label className=" required" htmlFor="message">Pesan</label>
                         <textarea name="message" id="message" type="textarea" placeholder="Masukkan pesan Anda" rows="5" required />
                     </div>
-                    <button type="submit" className="btn btn-primary mt-4">Kirim</button>
+                    <button id="submitBtn" type="submit" className="btn btn-primary mt-4">Kirim</button>
                 </form>
             </div>
         </div>

@@ -38,7 +38,7 @@ export default function Footer(){
                 <div className="flex items-center justify-between pt-4 pb-6 flex-col xs:flex-row gap-1 xs:gap-0">
                     <div className="flex gap-1">
                         <a className="flex gap-1 items-center hover:text-orange-600" href="https://instagram.com/tukangtravel.id">
-                            <i class="text-xl text-gray- ri-instagram-line"></i> 
+                            <i className="text-xl text-gray- ri-instagram-line"></i> 
                             <p>tukangtravel.id</p>
                         </a>
                     </div>
