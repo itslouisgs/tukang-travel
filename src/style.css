@@ -23,7 +23,11 @@
   .h6,
   p,
   a {
-    @apply text-sm md:text-base;
+    @apply text-base;
+  }
+
+  b {
+    @apply font-medium;
   }
 
   /* Buttons */
@@ -99,7 +103,7 @@
   }
 
   label {
-    @apply w-full sm:w-1/4;
+    @apply w-full sm:w-1/4 leading-loose;
   }
 
   input,

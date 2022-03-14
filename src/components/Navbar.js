@@ -38,10 +38,10 @@ export default function Navbar(){
             </div>
             <div id="hidden-nav" className="wrapper transition-[max-height] duration-500 ease-in-out overflow-hidden max-h-0">
                 <ul className="list-none pt-4 pb-6">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/#Join">Join Us</a></li>
-                    <li><a href="/contacts">Contacts</a></li>    
+                    <li class="leading-loose"><a href="/">Home</a></li>
+                    <li class="leading-loose"><a href="/about">About Us</a></li>
+                    <li class="leading-loose"><a href="/#Join">Join Us</a></li>
+                    <li class="leading-loose"><a href="/contact">Contacts</a></li>    
                 </ul>  
             </div>
         </nav>

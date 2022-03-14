@@ -7,6 +7,12 @@ import "../style.css"
 
 export default function Contact() {
     const form = useRef();
+    const inputFields = document.querySelectorAll("input")
+    const textareaFields = document.querySelectorAll("textarea")
+
+    const emptyFields = fields => {
+        fields.forEach(field => field.value = "")
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default refresh by the browser
@@ -18,6 +24,8 @@ export default function Contact() {
             .then((result) => {
                 alert("Pesan Anda sudah berhasil terkirim!");
                 submitBtn.innerText = "Kirim"
+                emptyFields(inputFields)
+                emptyFields(textareaFields)
             },
                 (error) => {
                     alert("Terjadi kesalahan, silakan coba lagi!");
