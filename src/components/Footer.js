@@ -16,7 +16,7 @@ export default function Footer(){
                             <ul className="w-1/2 sm:w-fit">
                                 <li><Link to="/">Beranda</Link></li>
                                 <li><Link to="/about">Tentang Kami</Link></li>
-                                <li><Link to="/#Join">Gabung</Link></li>
+                                <li><a href="https://drive.google.com/file/d/1yKWp6otceV8emOWL6-9xY6VnnGdTaYS3/view">Gabung</a></li>
                             </ul>
                             <ul className="w-1/2 sm:w-fit">
                                 <li><Link to="/privacy-policy">Kebijakan Privasi</Link></li>

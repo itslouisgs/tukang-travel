@@ -46,7 +46,7 @@ export default function Home(){
                     <div className="contact-wrapper rounded-2xl p-6 xs:p-8 md:p-12 xl:p-16 flex flex-col gap-8 md:gap-12 drop-shadow-lg">
                         <h2 className=" text-white w-full max-w-2xl text-shadow h2">Bingung mulai travelling dari mana? Ayo, gabung dengan kami sekarang juga!</h2>
                         <div className="flex gap-4">
-                            <Button href="" content="Gabung"/>
+                            <Button href="https://drive.google.com/file/d/1yKWp6otceV8emOWL6-9xY6VnnGdTaYS3/view?usp=sharing" content="Gabung"/>
                             <Button href="/contact" className="btn-secondary" content="Kontak Kami"/>
                         </div>
                     </div>
