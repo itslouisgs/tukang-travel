@@ -3,6 +3,8 @@ This is the landing page of **TukangTravel**—a lifestyle app designed for trav
 
 [Visit the website here](https://tukang-travel.web.app/)
 
+![TukangTravel](preview.png)
+
 ## Overview
 This app is a solution for travelers looking for adventure and hidden games across Indonesia. However, it is actually not if it doesn’t have a landing page that promotes and attracts users.
 
